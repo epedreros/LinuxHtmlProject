@@ -1,36 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Sample Deployment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0188cc, #005f99);
       color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
-    
+
+    .container {
+      max-width: 800px;
+      padding: 20px;
+    }
+
     h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
-    
+
     h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <div align="center">
-    <h1>Congratulations</h1>
-    <h2>This application was deployed using AWS CodeDeploy!</h2>
-    <h2>Un gran saludo a los integrantes del curso de Arquitectura Avanzada 27/10/2025</h2>
-    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
+  <div class="container">
+    <div class="card">
+      <h1>🎉 ¡Felicitaciones!</h1>
+      <h2>La aplicación fue desplegada con AWS CodeDeploy</h2>
+      <h2>Un gran saludo a los integrantes del curso de Arquitectura Avanzada <br>27/10/2025</h2>
+      <p>Próximos pasos: revisa la <a href="http://aws.amazon.com/documentation/codedeploy" target="_blank">Documentación de AWS CodeDeploy</a>.</p>
+    </div>
   </div>
 </body>
 </html>
-
